@@ -11,6 +11,7 @@
 					<div class="bg-white p-4 rounded-xl shadow-xl">
 						<img
 							class="w-full rounded-lg mb-4"
+							loading="lazy"
 							src={item.data.data.thumb}
 							alt={item.data.data.title}
 						/>

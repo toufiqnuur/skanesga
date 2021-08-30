@@ -8,6 +8,7 @@
 			>
 				<iframe
 					title="Profile SMK N 1 Seyegan"
+					loading="lazy"
 					class="w-full ratio-16/9 absolute -top-4 -left-4 shadow-xl rounded-xl"
 					src="https://youtube.com/embed/XdeM2zhzGdg"
 				/>

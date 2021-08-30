@@ -31,7 +31,7 @@
 	<div class="wrapper py-8 xl:py-16">
 		<div class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-8 xl:space-x-16">
 			<div class="text-center md:text-left md:w-1/3">
-				<img class="w-32 h-32 mx-auto md:mx-0 mb-8" src="/logo.png" alt="Logo" />
+				<img class="w-32 h-32 mx-auto md:mx-0 mb-8" src="/logo.png" loading="lazy" alt="Logo" />
 				<h5 class="font-bold text-xl mb-4">SMK N 1 Seyegan</h5>
 				<p class="text-lg font-light">
 					SMKN 1 Seyegan merupakan sekolah menengah kejuruan dengan akreditasi A.
@@ -40,7 +40,8 @@
 			<div class="text-center md:text-left md:w-1/3">
 				<h5 class="font-bold mb-8 md:mb-4 text-center md:text-left text-xl">Lokasi</h5>
 				<iframe
-					title="Profile SMK N 1 Seyegan"
+					title="SMK N 1 Seyegan"
+					loading="lazy"
 					class="w-full mb-2 border-4 border-white shadow-xl ratio-3/2 rounded-xl"
 					src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=SMK%20N%201%20Seyegan+(SMK%20N%201%20Seyegan)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 				/>

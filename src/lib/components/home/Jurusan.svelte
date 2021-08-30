@@ -30,7 +30,7 @@
 			>
 				{#each dataSlide as data}
 					<SwiperSlide>
-						<img class="ratio-16/9 object-cover shadow-xl w-full" src={data[1]} alt={data[0]} />
+						<img class="ratio-16/9 object-cover shadow-xl w-full" loading="lazy" src={data[1]} alt={data[0]} />
 						<span class="absolute px-2 text-sm rounded-tl bg-green-300 bottom-0 right-0"
 							>{data[0]}</span
 						>
