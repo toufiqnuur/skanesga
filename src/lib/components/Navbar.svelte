@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-
 	let isOpen = false;
 
 	const menu = [
@@ -28,9 +27,7 @@
 		? 'md:bg-transparent gradient md:text-white md:border-0'
 		: ''} fixed top-0 z-10 w-full border-b"
 >
-	<div
-		class="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between md:relative px-4"
-	>
+	<div class="wrapper flex flex-col md:flex-row md:items-center md:justify-between md:relative">
 		<div class="flex items-center justify-between py-3">
 			<a class="flex items-center text-xl font-bold" href="/">
 				<img class="mr-3 w-10 h-10" src="/logo.png" alt="SMK N 1 Seyegan" />

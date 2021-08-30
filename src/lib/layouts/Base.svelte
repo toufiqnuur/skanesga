@@ -10,7 +10,7 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="p-4">
+<div class="wrapper p-4">
 	<div class="flex">
 		<div class="post w-full overflow-hidden md:w-2/3 p-4 bg-white shadow-xl border text-base">
 			<h3>{title}</h3>

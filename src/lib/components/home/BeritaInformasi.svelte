@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-gray-100">
-	<div class="w-full max-w-screen-lg px-2 py-8 mx-auto">
+	<div class="wrapper py-8 xl:py-24">
 		<h3 class="text-3xl text-center font-black mb-3">Berita & Informasi</h3>
 		<div class="flex flex-wrap">
 			{#each post as item}
@@ -23,10 +23,15 @@
 			{/each}
 		</div>
 		<div class="mt-8 text-center">
-			<a
-				class="text-white bg-green-500 focus:bg-green-300 shadow-xl rounded py-3 px-5"
-				href="/">Berita lainnya</a
+			<a class="text-white bg-green-500 focus:bg-green-300 shadow-xl rounded py-3 px-5" href="/"
+				>Berita lainnya</a
 			>
 		</div>
 	</div>
 </div>
+
+<style>
+	.wrapper {
+		@apply px-2;
+	}
+</style>

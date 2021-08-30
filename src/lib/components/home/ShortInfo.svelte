@@ -7,7 +7,7 @@
 	];
 </script>
 
-<div class="w-full max-w-screen-lg px-4 py-8">
+<div class="w-full max-w-screen-xl mx-auto px-4 py-8">
 	<div
 		class="md:grid md:grid-flow-col space-y-8 md:space-y-0 md:divide-x-2 md:divide-gray-300 md:divide-solid"
 	>

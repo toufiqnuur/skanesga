@@ -28,8 +28,8 @@
 </script>
 
 <footer class="bg-gray-700 text-white border-t-4 border-green-300">
-	<div class="w-full max-w-screen-lg mx-auto px-4 py-8">
-		<div class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-8">
+	<div class="wrapper py-8 xl:py-16">
+		<div class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-8 xl:space-x-16">
 			<div class="text-center md:text-left md:w-1/3">
 				<img class="w-32 h-32 mx-auto md:mx-0 mb-8" src="/logo.png" alt="Logo" />
 				<h5 class="font-bold text-xl mb-4">SMK N 1 Seyegan</h5>

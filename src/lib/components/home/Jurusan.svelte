@@ -16,7 +16,7 @@
 	SwiperCore.use([Autoplay]);
 </script>
 
-<div class="w-full max-w-screen-lg px-4 py-8">
+<div class="wrapper py-8 xl:py-24">
 	<div class="flex items-center flex-col md:flex-row space-y-8 md:space-y-0 mt-4">
 		<div
 			class="relative -top-4 -left-4 w-full md:w-1/2 ratio-16/9 border-4 rounded-xl border-green-300 md:order-2"
