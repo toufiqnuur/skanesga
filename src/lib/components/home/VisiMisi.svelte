@@ -1,4 +1,4 @@
-<div class="bg-gray-100">
+<div class="bg-gray-100 pattern">
   <div class="wrapper py-8 xl:py-24">
     <div class="text-center w-full md:w-1/2 mx-auto">
       <h3 class="text-3xl font-black mb-3">Visi & Misi</h3>

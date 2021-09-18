@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-  export let title;
+  export let title, author, date;
 </script>
 
 <svelte:head>
@@ -15,6 +15,9 @@
     <div
       class="post w-full overflow-hidden md:w-2/3 p-4 bg-white shadow-xl border text-base">
       <h3>{title}</h3>
+      {#if author && date}
+        <h6 class="text-gray-500 font-bold mb-3">Post by {author} on {date}</h6>
+      {/if}
       <slot />
     </div>
   </div>

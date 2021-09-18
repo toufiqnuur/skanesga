@@ -1,4 +1,4 @@
-<div class="bg-gray-100">
+<div class="bg-gray-100 pattern">
   <div class="wrapper py-8 xl:py-24">
     <div
       class="flex items-center flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 xl:space-x-16">

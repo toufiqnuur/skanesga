@@ -36,6 +36,14 @@
         </p>
       </FooterSection>
 
+      <FooterSection title="Kontak">
+        <div class="flex flex-col space-y-4">
+          {#each kontak as { name, label, url }}
+            <KontakItem {name} {label} {url} />
+          {/each}
+        </div>
+      </FooterSection>
+
       <FooterSection title="Lokasi">
         <iframe
           title="SMK N 1 Seyegan"
@@ -46,14 +54,6 @@
           Jl. Kebonagung KM 8, Jamblangan, Margomulyo, Seyegan, Sleman, Daerah
           Istimewa Yogyakarta, 55561
         </p>
-      </FooterSection>
-
-      <FooterSection title="Kontak">
-        <div class="flex flex-col space-y-4">
-          {#each kontak as { name, label, url }}
-            <KontakItem {name} {label} {url} />
-          {/each}
-        </div>
       </FooterSection>
     </div>
   </div>

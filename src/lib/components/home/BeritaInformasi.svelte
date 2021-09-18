@@ -2,7 +2,7 @@
   export let post;
 </script>
 
-<div class="bg-gray-100">
+<div class="bg-gray-100 pattern">
   <div class="wrapper py-8 xl:py-24">
     <h3 class="text-3xl text-center font-black mb-3">Berita & Informasi</h3>
     <div class="flex flex-wrap">

@@ -5,3 +5,10 @@
 .wrapper {
   @apply w-full max-w-screen-xl mx-auto px-4;
 }
+
+.pattern {
+  opacity: 0.8;
+  background-image: radial-gradient(#a8e2c1 1.3px, transparent 1.3px);
+  background-size: 26px 26px;
+  background-position: 0 0, 10px 10px;
+}
