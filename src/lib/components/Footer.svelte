@@ -78,7 +78,7 @@
 			with <a class="font-bold" target="_blank" href="https://kit.svelte.dev/">Svelte Kit</a>
 		</p>
 		<p class="text-xs">
-			Sebagian merupakan milik SMK N 1 Seyegan. Sebagian data yang ada merujuk kepada data website
+			Sebagian aset yang ada merupakan milik SMK N 1 Seyegan. Sebagian data yang ada merujuk kepada data website
 			official <a class="font-bold" target="_blank" href="https://smkn1seyegan.sch.id/"
 				>SMK N 1 Seyegan</a
 			>.
