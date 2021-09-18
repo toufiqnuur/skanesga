@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .wrapper {
-	@apply w-full max-w-screen-xl mx-auto px-4;
+  @apply w-full max-w-screen-xl mx-auto px-4;
 }
