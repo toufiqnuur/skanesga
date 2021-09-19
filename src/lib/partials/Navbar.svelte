@@ -1,6 +1,10 @@
 <script lang="ts">
+  import ButtonToggle from "$lib/components/ButtonToggle.svelte";
+  import { isOpen } from "../../store";
   import { page } from "$app/stores";
-  let isOpen = false;
+
+  let scrollY = 0;
+  $: isHome = $page.path === "/";
 
   const menu = [
     {
@@ -22,52 +26,39 @@
   ];
 </script>
 
+<svelte:window bind:scrollY />
+
 <nav
-  class="bg-white {$page.path === '/'
-    ? 'md:bg-transparent gradient md:text-white md:border-0'
-    : ''} fixed top-0 z-10 w-full border-b">
-  <div
-    class="wrapper flex flex-col md:flex-row md:items-center md:justify-between md:relative">
-    <div class="flex items-center justify-between py-3">
-      <a class="flex items-center text-xl font-bold" href="/">
-        <img class="mr-3 w-10 h-10" src="/logo.png" alt="SMK N 1 Seyegan" />
+  class:nav-default={!isHome || $isOpen || scrollY > 1}
+  class:nav-gradient={isHome && scrollY < 1 && !$isOpen}>
+  <div class="container flex items-center justify-between py-3">
+    <div
+      class:text-white={isHome && !$isOpen && scrollY < 1}
+      class="flex flex-1 justify-between">
+      <a
+        on:click={() => isOpen.set(false)}
+        class="flex items-center text-xl font-bold"
+        href="/">
+        <img
+          class="mr-3 w-10 h-10"
+          src="/logo.png"
+          alt="SMK N 1 Seyegan"
+          loading="lazy" />
         SMK N 1 Seyegan
       </a>
-      <button
-        on:click={() => (isOpen = !isOpen)}
-        class="md:hidden flex items-center justify-center w-10 h-10"
-        type="button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            class={isOpen ? "hidden" : "block"}
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-          <path
-            class={isOpen ? "block" : "hidden"}
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+      <ButtonToggle />
     </div>
-
     <div
-      class:hidden={!isOpen}
-      class="md:block w-full md:w-auto absolute md:relative bg-white md:bg-transparent top-16 md:top-0 left-0 border-t border-b md:border-0 px-4 py-3 md:p-0">
+      class:hidden={!$isOpen}
+      class="md:block w-full md:w-auto absolute md:relative bg-white md:bg-transparent top-16 md:top-0 left-0 border-t border-b md:border-0 px-8 py-4 md:p-0">
       <div
+        class:md:text-white={isHome && scrollY < 1}
         class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4">
         {#each menu as { name, url }}
           <a
-            on:click={() => (isOpen = false)}
-            class:active={$page.path === url}
+            on:click={() => isOpen.set(false)}
+            class:font-bold={$page.path === url}
+            class="hover:text-green-500"
             sveltekit:prefetch
             href={url}>{name}</a>
         {/each}
@@ -77,23 +68,17 @@
 </nav>
 
 <style>
-  @media (min-width: 768px) {
-    .gradient:after {
-      content: "";
-      width: 100%;
-      height: 4rem;
-      background: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0)
-      );
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+  nav {
+    @apply w-full fixed top-0 z-10;
   }
-  .active {
-    @apply font-bold;
+  .nav-default {
+    @apply bg-white border-b;
+  }
+  .nav-gradient {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    );
   }
 </style>

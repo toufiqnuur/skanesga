@@ -27,7 +27,7 @@
 </script>
 
 <footer class="bg-gray-700 text-white border-t-4 border-green-300">
-  <div class="wrapper py-8 xl:py-16">
+  <div class="container py-8 xl:py-16">
     <div class="flex flex-col md:flex-row space-y-20 md:space-y-0 md:space-x-8">
       <FooterSection title="SMK N 1 Seyegan">
         <p class="text-gray-300 font-light">
