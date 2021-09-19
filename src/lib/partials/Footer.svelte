@@ -57,6 +57,21 @@
       </FooterSection>
     </div>
   </div>
+  <div class="bg-gray-800">
+    <div class="container text-xs text-gray-300 text-center py-5">
+      <p class="mb-3">
+        Made by <a class="font-semibold" href="//github.com/toufiqnuur"
+          >toufiq</a>
+        with <a class="font-semibold" href="//kit.svelte.dev">sveltekit</a>
+      </p>
+      <p>
+        Website ini bukanlah website resmi SMKN 1 Seyegan. Semua aset foto, text
+        dan lain sebagainya merupakan milik <a
+          class="text-green-300"
+          href="//smkn1seyegan.sch.id">SMKN 1 Seyegan</a>
+      </p>
+    </div>
+  </div>
 </footer>
 
 <style>
