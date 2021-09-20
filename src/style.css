@@ -12,3 +12,40 @@
   background-size: 26px 26px;
   background-position: 0 0, 10px 10px;
 }
+
+@layer utilities {
+  .ratio-16\/9 {
+    aspect-ratio: 16/9;
+  }
+}
+
+.text-header {
+  @apply text-3xl font-black mb-3;
+}
+
+.btn-primary {
+  @apply text-white bg-green-500 shadow-xl rounded py-3 px-5;
+}
+.btn-primary:focus {
+  @apply bg-green-600;
+}
+
+/*  LAYOUT  */
+
+.box-content-2 {
+  @apply flex space-y-8 items-center flex-col mt-4;
+}
+.content-item-2 {
+  @apply w-full relative;
+}
+.content-item-2.highlight {
+  @apply ratio-16/9 border-4 border-green-300 rounded-xl;
+}
+@media (min-width: 768px) {
+  .box-content-2 {
+    @apply flex-row space-y-0;
+  }
+  .content-item-2 {
+    @apply w-1/2;
+  }
+}

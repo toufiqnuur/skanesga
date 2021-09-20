@@ -1,9 +1,6 @@
 <div class="hero">
   <div class="text-white text-center w-full max-w-screen-lg mx-auto px-4">
-    <h1 class="font-bold text-4xl filter drop-shadow-lg mb-3">
-      SMK N 1 Seyegan
-    </h1>
-    <p>Mutu Unggul Prima dalam Karya</p>
+    <slot />
   </div>
 </div>
 
