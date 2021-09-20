@@ -32,6 +32,7 @@
   "type": "module",
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "html-minifier": "^4.0.0",
     "swiper": "^7.0.1"
   }
 }
