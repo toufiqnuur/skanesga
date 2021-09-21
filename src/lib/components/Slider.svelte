@@ -4,13 +4,13 @@
   import "swiper/css";
 
   const dataSlide = [
-    ["Konstruksi Gedung Sanitasi dan Perawatan", "/jurusan/kgsp.jpg"],
-    ["Desain Pemodelan dan Informasi Bangunan", "/jurusan/dpib.jpg"],
-    ["Teknik Fabrikasi  Logam dan Manufaktur", "/jurusan/tflm.jpg"],
-    ["Teknik Kendaraan Ringan Otomotif", "/jurusan/tkro.jpg"],
-    ["Teknik Ototronik", "/jurusan/to.jpg"],
-    ["Teknik dan Bisnis Sepeda Motor", "/jurusan/tbsm.jpg"],
-    ["Teknik Komputer dan Jaringan", "/jurusan/tkj.jpg"],
+    ["Konstruksi Gedung Sanitasi dan Perawatan", "/jurusan/kgsp.jpeg"],
+    ["Desain Pemodelan dan Informasi Bangunan", "/jurusan/dpib.jpeg"],
+    ["Teknik Fabrikasi  Logam dan Manufaktur", "/jurusan/tflm.jpeg"],
+    ["Teknik Kendaraan Ringan Otomotif", "/jurusan/tkro.jpeg"],
+    ["Teknik Ototronik", "/jurusan/to.jpeg"],
+    ["Teknik dan Bisnis Sepeda Motor", "/jurusan/tbsm.jpeg"],
+    ["Teknik Komputer dan Jaringan", "/jurusan/tkj.jpeg"],
   ];
 
   SwiperCore.use([Autoplay]);

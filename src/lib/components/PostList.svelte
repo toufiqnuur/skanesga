@@ -9,7 +9,7 @@
         <img
           class="w-full rounded-lg mb-4"
           loading="lazy"
-          src={item.data.data.thumb}
+          src="/galeri/post_thumb.jpeg"
           alt={item.data.data.title} />
         <p class="text-sm text-gray-800 my-1">{item.data.data.date}</p>
         <a class="text-xl font-bold" href={`/post/${item.data.data.slug}`}

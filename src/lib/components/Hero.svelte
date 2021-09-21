@@ -16,7 +16,7 @@
     z-index: -1;
   }
   .hero:before {
-    background: url(/banner.jpg);
+    background: url(/banner.jpeg);
     background-size: cover;
     background-position: center;
     background-blend-mode: hard-light;
