@@ -40,7 +40,9 @@
         class="flex items-center text-xl font-bold"
         href="/">
         <img
-          class="mr-3 w-10 h-10"
+          width="40"
+          height="40"
+          class="mr-3"
           src="/logo.png"
           alt="SMK N 1 Seyegan"
           loading="lazy" />

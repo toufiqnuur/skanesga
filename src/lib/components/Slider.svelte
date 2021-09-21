@@ -25,6 +25,8 @@
   {#each dataSlide as data}
     <SwiperSlide>
       <img
+        width="100%"
+        height="auto"
         class="ratio-16/9 object-cover shadow-xl w-full"
         loading="lazy"
         src={data[1]}

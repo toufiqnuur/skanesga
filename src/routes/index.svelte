@@ -7,7 +7,7 @@
 </script>
 
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
   import HomeSection from "$lib/components/HomeSection.svelte";
   import ShortInfo from "$lib/components/ShortInfo.svelte";
   import Hero from "$lib/components/Hero.svelte";
@@ -16,11 +16,11 @@
   import PhotoList from "$lib/components/PhotoList.svelte";
 
   export let post: Array<any>;
-  
+
   onMount(() => {
-    const yt = document.querySelectorAll('iframe')[0]
-    yt.setAttribute('src','https://youtube.com/embed/XdeM2zhzGdg')
-  })
+    const yt = document.querySelectorAll("iframe")[0];
+    yt.setAttribute("src", "https://youtube.com/embed/XdeM2zhzGdg");
+  });
 </script>
 
 <Hero>
@@ -34,8 +34,7 @@
       <iframe
         title="Profile SMK N 1 Seyegan"
         loading="lazy"
-        class="w-full bg-white ratio-16/9 absolute -top-4 -left-4 shadow-xl rounded-xl"
-      />
+        class="w-full bg-white ratio-16/9 absolute -top-4 -left-4 shadow-xl rounded-xl" />
     </div>
     <div class="content-item-2 pb-3 md:pb-0">
       <h3 class="text-header">SMK N 1 Seyegan</h3>

@@ -7,6 +7,8 @@
     <div class="w-full md:w-1/3 md:px-2 py-2">
       <div class="bg-white p-4 rounded-xl shadow-xl">
         <img
+          width="100%"
+          height="auto"
           class="w-full rounded-lg mb-4"
           loading="lazy"
           src="/galeri/post_thumb.jpeg"
