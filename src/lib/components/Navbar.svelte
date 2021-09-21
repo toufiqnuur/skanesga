@@ -58,7 +58,7 @@
           <a
             on:click={() => isOpen.set(false)}
             class:font-bold={$page.path === url}
-            class="hover:text-green-500"
+            class="focus:text-green-500"
             sveltekit:prefetch
             href={url}>{name}</a>
         {/each}
