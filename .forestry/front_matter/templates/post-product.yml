@@ -1,4 +1,32 @@
 ---
 label: Post Product
 hide_body: false
-fields: []
+fields:
+- name: product_name
+  type: text
+  config:
+    required: false
+  label: Product name
+- name: product_image
+  type: image_gallery
+  config: {}
+  label: Product image
+- name: product_price
+  type: text
+  config:
+    required: false
+  label: Product price
+- name: product_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Product description
+- name: product_link
+  type: text
+  config:
+    required: false
+  label: Product link
